@@ -1,0 +1,19 @@
+@baseUrl = http://localhost:3002
+
+# @name transacoes
+POST {{baseUrl}}/clientes/1/transacoes
+Content-Type: application/json
+
+{
+  "valor": 1000,
+  "tipo" : "c",
+  "descricao" : "descricao"
+}
+
+###
+
+# @name transacoes
+GET {{baseUrl}}/clientes/1/extrato
+Content-Type: application/json
+
+{}
